@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jessica Song} \\ \vspace{1pt}
+    \small +1-647-857-8038 $|$ \href{mailto:jessicasong@cmu.edu}{\underline{jessicasong@cmu.edu}} $|$ 
+    \href{https://www.linkedin.com/in/jessica-lr-song}{\underline{linkedin.com/in/jessica-lr-song}} $|$
+    \href{https://github.com/jessica-lr-song}{\underline{github.com/jessica-lr-song}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {B.S. in Computer Science and Statistics \& Machine Learning}{August 2026 -- May 2029}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} 15-122 (Principles of Imperative Computation), 15-112 (Fundamentals of Programming and CS), 21-241 (Matrices and Linear Transformations), 21-122 (Integration and Approximation), 21-120 (Differential and Integral Calculus), 36-200 (Reasoning with Data), 33-141 (Physics I for Engineering Students)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer}{June 2026 -- Present}
+      {ScottyLabs}{Pittsburgh, PA}
+      \resumeItemListStart
+        \resumeItem{Collaborated on a team to build CMU Housing, a dorm-comparison website used by $\sim$5,000 CMU students}
+        \resumeItem{Designed and built a reusable React/TypeScript ``Share'' dropdown supporting URL copy, SMS, email, and iframe embeds, expanding site distribution to 4 channels}
+        \resumeItem{Used React hooks to manage state and drive real-time UI feedback}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Lead Instructor}{May 2022 -- June 2026}
+      {University of Toronto Schools Competitive Coding Organization}{Toronto, Canada}
+      \resumeItemListStart
+        \resumeItem{Organized competitive coding lessons for 110+ students}
+        \resumeItem{Built and scaled contests on an online judge (\href{https://dmoj.ca}{\underline{dmoj.ca}}) to 280+ participants, mirroring real competitive programming formats to make authentic contest practice accessible to high school students}
+        \resumeItem{Created and presented Python workshops at \href{https://www.girlsintechcon.com/}{\underline{Girls In Tech Conference}} and \href{https://blues-hacks24.devpost.com/}{\underline{Blues Hacks}} hackathon, reaching 120+ middle and high schoolers across Toronto}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://endlessstrands.org}{\underline{Endless Strands}}} $|$ \emph{JavaScript, jQuery, SEO}}{August 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Engineered and shipped a website using HTML5, CSS3, JavaScript, jQuery, and Bootstrap 5, serving as the organization's primary web presence for donor and volunteer acquisition}
+            \resumeItem{Integrated Google Analytics (GA4) for site-wide event tracking and applied on-page SEO practices (XML sitemap, semantic HTML, meta descriptions) to improve organic discoverability}
+            \resumeItem{Deployed via GitHub Pages with custom domain (DNS/CNAME) configuration}
+            \resumeItem{Built a GitHub Actions CI/CD pipeline that auto-deploys the site and blocks commits/PRs containing hardcoded credentials via detect-secrets scanning}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/jessica-lr-song/3d-chess-bot}{\underline{3D Chess Bot}}} $|$ \emph{Java}}{May 2026 -- June 2026}
+          \resumeItemListStart
+            \resumeItem{Engineered a Java chess engine implementing iterative-deepening minimax search with alpha-beta pruning, reaching 5-7 ply depth within a 5-second move limit}
+            \resumeItem{Optimized search performance with MVV-LVA move ordering, killer-move and history heuristics, and time-boxed iterative deepening to guarantee a legal move every turn}
+            \resumeItem{Reverse-engineered the game engine's bytecode to uncover undocumented win conditions and designed a custom evaluation function (material, board control, king safety) to exploit them}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------HONORS-----------
+\section{Honors}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{MIT/Jane Street Math Prize for Girls Qualifier} (Top 3 Canadian Score)}{October 2025}
+      \resumeProjectHeading
+          {\textbf{PhysicsBowl Division 2 Contestant} (Top 5 team score, helped place 1st in Canada)}{June 2026}
+      \resumeProjectHeading
+          {\textbf{4x AIME Qualifier}}{2022 -- 2026}
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Java, Python, TypeScript, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Node.js, Wordpress} \\
+     \textbf{Developer Tools}{: Git, GitHub, GitHub Actions, GitHub Pages, Docker} \\
+     \textbf{Libraries}{: jQuery, Matplotlib} \\
+     \textbf{Web \& Platforms}{: Shopify, Google Analytics (GA4), SEO, Open Graph}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
